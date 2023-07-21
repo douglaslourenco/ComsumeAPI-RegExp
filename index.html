@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <header><h1>Formluário</h1></header>
+        <form action="">
+            <div>
+                <label for="name">CEP</label><br/>
+                <!-- Validação de cep utilizando RegExp no html5-->
+                <input type="text" id="cep" placeholder=" 00000-000" pattern="^[0-9]{5}-[0-9]{3}$" title="XXXXX-XXX" required><br/><br/>
+            </div>
+
+            <div>
+                <label for="">Endereço</label><br>
+                <input type="text" name="" id="endereco"><br><br>
+            </div>
+
+            <div>
+                <label for="">Bairro</label><br>
+                <input type="text" id="bairro"><br><br>
+            </div>
+            
+            <div>
+                <label for="">Cidade</label><br>
+                <input type="text" id="cidade"><br><br>
+            </div>
+
+            <div>
+                <label for="">UF</label><br>
+                <select name="" id="uf">
+                    <option value="0">Selecione</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                    <option value="AC">AC</option>
+                    <option value="MT">MT</option>
+                    <option value="BA">BA</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" style="margin-top: 10px;" id="submit">
+            </div>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
